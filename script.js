@@ -13,12 +13,10 @@ const person = {
 // window.team1 = team1;
 // window.cap1 = cap1;
 
+// Create the variables as mentioned in the problem statement
 const team = players;
+const team1 = players.slice();
+const cap1 = Object.assign({}, person);
 
-const team1 = players.slice();// Using slice() to create a shallow copy
-
-const cap1 = Object.assign({}, person);// Using Object.assign() to create a shallow copy
-
-console.log(team);   
-console.log(team1);  
-console.log(cap1);  
+// Exporting the variables so they can be accessed in the test file
+export { team, team1, cap1 };
